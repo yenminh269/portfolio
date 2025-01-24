@@ -2,7 +2,7 @@
 - 👀 My hobby is reading, jogging and listening to music
 - 📫 How to reach me: hhyenminh2001@gmail.com
 - 😄 Pronouns: she/her
-- ⚡ Fun fact: i'm extra introverted
+
 
 <!---
 yenminh269/yenminh269 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
