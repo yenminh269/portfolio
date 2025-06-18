@@ -1,0 +1,28 @@
+.top {
+    background-color: #FFDCDC;
+}
+.top h1{
+    color:#A77272 ;
+    font-family:  "Sacramento", cursive;
+    font-size: 5.625rem;
+}
+
+.top div div h2, .header div div h2{
+    font-weight: 450 ;
+    color:#A77272 ;
+}
+
+.header{
+    background-color: #FFF2EB;
+}
+
+.header img{
+    border-radius: 50%;
+}
+
+.header div p {
+    color: #A78572;
+    font-weight: 450;
+   
+}
+
