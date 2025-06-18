@@ -5,61 +5,178 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Porfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section>
-        <div class="px-4 py-5 my-5 text-center"> 
-            <img class="d-block mx-auto mb-4" src="..." alt="" width="72" height="57"> 
-            <h1 class="display-5 fw-bold text-body-emphasis">I'm Minh</h1> 
+    <section class="top">
+        <img src="./images/cloud.webp" alt="cloud" width="250" >
+        <div class="px-4 text-center">
+            <h1>I'm Minh.</h1> 
             <div class="col-lg-6 mx-auto"> 
-                <p class="lead mb-4">Quickly design .</p> 
+                <h2 class="lead my-3">a glimpse into my learning journey in tech
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
+                        <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
+                        <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
+                        </svg>
+                </h2> 
             </div> 
         </div>
-        <img src="./images/porfolio-photo.jpg" height="200">
-        <h2>Summary</h2>
-        <p>I am a junior university student majoring in Computer Science, with
-            a strong interest in software development.
-        </p>
-        <hr>
+        <div class="container">
+            <img class="cloud" src="./images/cloud.webp" alt="cloud" width="250"> 
+            <img src="./images/bol1.png" alt="cherryblossom" width="330">
+        </div>
     </section>
 
-    <section>
-        <h2>Education </h2>
-        <ul>
-            <li>Bachelor of Science, Computer Science - University of Houston(Aug. 2024 - May 2027)</li>
-        </ul>
-        <hr>
-
-        <h2>Projects</h2>
-        <a href="https://yenminh269.github.io/etch-a-sketch/"><strong>Etch-A-Sketch</strong></a>| HTML, CSS, JavaScript, Git<br><br>
-        <img src="./images/etch-a-sketch.png" height="200"><br>
-        <a href="https://yenminh269.github.io/rock-paper-game/"><strong>Rock-Paper-Scissors</strong></a>| HTML, CSS, JavaScript, Git<br><br>
-        <img src="./images/rock-paper-scissor.png" height="200"><br>    
-        <hr>
-
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Java, Python, C++, JavaScript, HTML/CSS, R </li>
-            <li><strong>Developer Tools:</strong> Git, Visual Studio Code, Eclipse</li>
-        </ul>
-        <hr>
+    <section class="header pt-5">
+        <div class="px-4 py-5 text-center"> 
+            <img class="d-block mx-auto mb-4" src="./images/porfolio-photo.jpg" alt="profile photo" width="180" height="180"> 
+            <div class="col-lg-6 mx-auto my-5"> 
+                <h2 class="my-5">Hi.</h2>
+                <p class="lead"> I am a student studying Computer Science at the University of Houston, passionate about building practical software projects and excited to keep learning<br>
+                - fueled by curiosity and plenty of  <img src="./images/coffee.png" alt="coffee" width="22"></p>  
+            </div> 
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#A77272" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"/>
+            </svg>
+        </div>
     </section>
 
-    <section>
-        <h2>Others</h2>
-        <a href="./public/contact.html">Contact Me</a>
-        <a href="./public/hobbies.html">Hobbies</a>
+    <section class="body">
+        <div class="container px-4 py-5 text-center" id="custom-cards">
+            <h2>My Projects</h2> 
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 "> 
+                <div class="col"> 
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg " style="background-image: url('./images/etch.png');"> 
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 hovered"> 
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Etch-a-Sketch</h3> 
+                            <ul class="d-flex list-unstyled mt-auto"> 
+                                <li class="me-auto"> 
+                                    <a href="https://yenminh269.github.io/etch-a-sketch/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                        </svg>
+                                    </a>
+                                </li> 
+                                <li class="d-flex align-items-center me-3"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg> 
+                                    <small>HTML, CSS, JavaScript</small> 
+                                </li> 
+                            </ul> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col"> 
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/rock2.png');"> 
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 hovered"> 
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Rock-Paper-Scissors</h3> 
+                            <ul class="d-flex list-unstyled mt-auto"> 
+                                <li class="me-auto"> 
+                                    <a href="https://yenminh269.github.io/rock-paper-game/" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                        </svg>
+                                    </a>
+                                </li> 
+                                <li class="d-flex align-items-center me-3"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg> 
+                                    <small>HTML, CSS, JavaScript</small> 
+                                </li> 
+                            </ul> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');"> 
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 hovered"> 
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Event Booking System</h3> 
+                            <ul class="d-flex list-unstyled mt-auto"> 
+                                <li class="me-auto"> 
+                                    <a href="https://github.com/yenminh269/event_bookings" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                        </svg>
+                                    </a>
+                                </li> 
+                                <li class="d-flex align-items-center me-3"> 
+                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg> 
+                                    <small>Java</small> 
+                                </li> 
+                               
+                            </ul> 
+                        </div> 
+                    </div> 
+                </div> 
+            </div> 
+            <h2 class="border-top pt-5 pb-4">Technical Skills</h2>
+            <ul class="list-unstyled skills">
+                <li><strong>Languages:</strong> C++, HTML/CSS, Java, JavaScript, Python, R </li><br>
+                <li><strong>Developer Tools:</strong> Git, Bootstrap, Visual Studio Code, Eclipse</li>
+            </ul>
+        </div>
     </section>
 
-    <section>
-
+    <section class="about pb-5">
+        <h2 class="pt-5 text-center">About Me</h2>
+        <div class="d-flex flex-column flex-md-row p-4 gap-4 align-items-center justify-content-center"> 
+            <div class="list-group"> 
+                <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"> 
+                    <img src="./images/paw-2-svgrepo-com.svg" alt="a paw" width="32" height="32" class="rounded-circle flex-shrink-0"> 
+                    <div class="d-flex gap-2 w-100 justify-content-between"> 
+                        <div> 
+                            <h6 class="mb-0">Animal</h6> 
+                            <p class="mb-0 opacity-75">I love dogs and enjoy spending time with them.</p> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"> 
+                    <img src="./images/green-growth-leaf-nature-plant-4-svgrepo-com.svg" alt="leaf" width="32" height="32" class="rounded-circle flex-shrink-0"> 
+                    <div class="d-flex gap-2 w-100 justify-content-between"> 
+                        <div> 
+                            <h6 class="mb-0">Environment</h6> 
+                            <p class="mb-0 opacity-75">I'm passionate about sustainability — I care about recycling, reducing plastic use, and planting trees to help the planet.</p> 
+                        </div> 
+                    </div> 
+                </div>
+                <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"> 
+                    <img src="./images/music-note-4-svgrepo-com.svg" alt="music note" width="32" height="32" class="rounded-circle flex-shrink-0"> 
+                    <div class="d-flex gap-2 w-100 justify-content-between"> 
+                        <div> 
+                            <h6 class="mb-0">Hobbies</h6> 
+                            <p class="mb-0 opacity-75">Reading, jogging, and listening to music help me relax and recharge.</p> 
+                        </div> 
+                    </div> 
+                </div>  
+            </div> 
+        </div>
     </section>
 
-    <section>
-        <footer>
-            <p>© Minh Ho. All rights reserved.</p>
-        </footer>
-    </section>
+    <footer class="py-5"> 
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
+            <li class="nav-item">
+                <a href="https://github.com/yenminh269" class="nav-link px-2 text-body-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+            </li> 
+            <li class="nav-item">
+                <a href="https://www.linkedin.com/in/minh-ho/" class="nav-link px-2 text-body-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                    </svg>
+                </a>
+            </li>
+        </ul> 
+        <p class="text-center text-body-secondary">© Minh Ho. All rights reserved</p>         
+    </footer> 
+        
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>

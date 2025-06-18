@@ -1,18 +1,29 @@
-.top {
-    background-color: #FFDCDC;
+.top, footer {
+    background-color: #f6dfdf;
 }
+
 .top h1{
     color:#A77272 ;
-    font-family:  "Sacramento", cursive;
+    font-family: "Send Flowers", cursive;
+    font-weight: 700;
     font-size: 5.625rem;
 }
 
 .top div div h2, .header div div h2{
-    font-weight: 450 ;
+    font-weight: 450;
     color:#A77272 ;
 }
 
-.header{
+.top .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cloud {
+    align-self: flex-end;
+}
+.header, .about{
     background-color: #FFF2EB;
 }
 
@@ -20,9 +31,32 @@
     border-radius: 50%;
 }
 
-.header div p {
+.header div p, .about h2 {
     color: #A78572;
     font-weight: 450;
-   
 }
 
+.body {
+    background-color: #FFE8CD;
+}
+
+.body h2{
+    color: #917454;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hovered {
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity ease 0.3s;
+}
+
+.hovered:hover {
+    opacity: 0.7;
+}
+
+.body .skills{
+   color: #665E4D;
+}
+
+ 
