@@ -3,152 +3,379 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Porfolio</title>
+    <title>Minh Ho | Portfolio</title>
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section class="top">
-        <img src="./images/cloud.webp" alt="cloud" width="250" >
-        <div class="px-4 text-center">
+    <!-- Top Hero Section -->
+    <section class="top pt-5 pb-4">
+        <img src="./images/cloud.webp" alt="cloud" width="250" class="cloud d-none d-md-block">
+        <div class="px-4 text-center headline-container">
             <h1>I'm Minh.</h1> 
-            <div class="col-lg-6 mx-auto"> 
-                <h2 class="lead my-3">a glimpse into my learning journey in tech
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
-                        <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018"/>
-                        <path d="M13 6.5a6.47 6.47 0 0 1-1.258 3.844q.06.044.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11"/>
-                        </svg>
-                </h2> 
-            </div> 
+            <h2 class="headline-tagline mt-3 mb-4">
+                Computer Science Student | Interested in Software Engineering and QA Automation
+            </h2>
+            <div class="headline-badge-group">
+                <span class="headline-badge"><i class="bi bi-code-slash"></i> Java & Spring Boot</span>
+                <span class="headline-badge"><i class="bi bi-shield-check"></i> Software Engineering</span>
+                <span class="headline-badge"><i class="bi bi-bug"></i> QA & Automation Testing</span>
+                <span class="headline-badge"><i class="bi bi-database"></i> Full-Stack Development</span>
+            </div>
         </div>
-        <div class="container">
+        <div class="container mt-4">
             <img class="cloud" src="./images/cloud.webp" alt="cloud" width="250"> 
             <img src="./images/bol1.png" alt="cherryblossom" width="330">
         </div>
     </section>
 
-    <section class="header pt-5">
-        <div class="px-4 py-5 text-center"> 
-            <img class="d-block mx-auto mb-4" src="./images/porfolio-photo.jpg" alt="profile photo" width="180" height="180"> 
-            <div class="col-lg-6 mx-auto my-5"> 
-                <h2 class="my-5">Hi.</h2>
-                <p class="lead"> I am a student studying Computer Science at the University of Houston, passionate about building practical software projects and excited to keep learning<br>
-                - fueled by curiosity and plenty of  <img src="./images/coffee.png" alt="coffee" width="22"></p>  
-            </div> 
-            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="#A77272" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5M8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6"/>
-            </svg>
+    <!-- Header & Education Section -->
+    <section class="header py-5">
+        <div class="container px-4">
+            <div class="row align-items-center justify-content-center g-5">
+                <div class="col-lg-4 text-center">
+                    <img src="./images/porfolio-photo.jpg" alt="profile photo" width="220" height="220" class="img-fluid rounded-circle"> 
+                </div>
+                <div class="col-lg-8"> 
+                    <h2 class="mb-4">Hi there.</h2>
+                    <p class="header-text mb-4">
+                        I am a Computer Science student at the University of Houston, passionate about building robust, high-performance backends and validating them through automated testing. I specialize in Java & Spring Boot and love applying modern software engineering principles to solve complex problems.
+                    </p>
+                    
+                    <!-- Education Card -->
+                    <div class="education-card card p-4 border-0 shadow-sm">
+                        <div class="d-flex align-items-start gap-3">
+                            <div class="fs-1 text-secondary-color mt-1">
+                                <i class="bi bi-mortarboard-fill"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1 fw-bold" style="color: var(--primary-color);">University of Houston</h5>
+                                <p class="mb-1 fw-semibold text-muted">B.S. in Computer Science, Minor in Mathematics (GPA: 3.9 — Dean's List)</p>
+                                <p class="mb-2 text-muted small"><i class="bi bi-calendar-event"></i> Graduating Dec 2027</p>
+                                <div class="mt-2">
+                                    <span class="small fw-bold text-muted d-block mb-1">Relevant Coursework:</span>
+                                    <span class="tech-tag">Data Structures & Algorithms</span>
+                                    <span class="tech-tag">Operating Systems</span>
+                                    <span class="tech-tag">Database Systems</span>
+                                    <span class="tech-tag">Software Design</span>
+                                    <span class="tech-tag">Computer Networks</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
         </div>
     </section>
 
-    <section class="body">
-        <div class="container px-4 py-5 text-center" id="custom-cards">
-            <h2>My Projects</h2> 
-            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 "> 
+    <!-- Projects Section -->
+    <section class="body py-5" id="projects">
+        <div class="container px-4">
+            <h2 class="text-center mb-5 section-title d-block mx-auto text-center">Featured Projects</h2> 
+            
+            <div class="row row-cols-1 row-cols-lg-3 g-4"> 
+                <!-- MedEase -->
                 <div class="col"> 
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg " style="background-image: url('./images/etch.png');"> 
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 hovered"> 
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Etch-a-Sketch</h3> 
-                            <ul class="d-flex list-unstyled mt-auto"> 
-                                <li class="me-auto"> 
-                                    <a href="https://yenminh269.github.io/etch-a-sketch/" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                                        </svg>
+                    <div class="card project-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <div class="project-img-wrapper" style="background-image: url('./images/medease_mockup.png');">
+                            <div class="project-metrics-overlay">
+                                <span class="badge-impact"><i class="bi bi-lightning-fill"></i> Sub-100ms Query</span>
+                                <span class="badge-impact"><i class="bi bi-arrow-down-circle-fill"></i> 90% Less Manual Entry</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h3 class="project-title mb-0">MedEase</h3>
+                                    <a href="https://github.com/hungqbui/hackhcc_adedetection" target="_blank" class="project-link" aria-label="Github link for MedEase">
+                                        <i class="bi bi-box-arrow-up-right fs-5"></i>
                                     </a>
-                                </li> 
-                                <li class="d-flex align-items-center me-3"> 
-                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg> 
-                                    <small>HTML, CSS, JavaScript</small> 
-                                </li> 
-                            </ul> 
-                        </div> 
-                    </div> 
+                                </div>
+                                <p class="project-subtitle mb-3">Intelligent Medication Assistant</p>
+                                <ul class="project-bullets mb-4">
+                                    <li>Collaborated in a 2-person team to build a full-stack healthcare web app with an asynchronous Python/FastAPI backend and MongoDB.</li>
+                                    <li>Integrated Google Gemini OCR and audio transcription with openFDA API to automate parsing and cross-reference drug interactions.</li>
+                                    <li>Architected LangChain tool-calling for semantic search and Server-Sent Events (SSE) for real-time reminders.</li>
+                                </ul>
+                            </div>
+                            <div class="project-tags mt-auto pt-3 border-top">
+                                <span class="tech-tag">FastAPI</span>
+                                <span class="tech-tag">MongoDB</span>
+                                <span class="tech-tag">Gemini OCR</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
+
+                <!-- Carbon-Aware Routing -->
                 <div class="col"> 
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('./images/rock2.png');"> 
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1 hovered"> 
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Rock-Paper-Scissors</h3> 
-                            <ul class="d-flex list-unstyled mt-auto"> 
-                                <li class="me-auto"> 
-                                    <a href="https://yenminh269.github.io/rock-paper-game/" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                                        </svg>
+                    <div class="card project-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <div class="project-img-wrapper" style="background-image: url('./images/carbon_routing.png');">
+                            <div class="project-metrics-overlay">
+                                <span class="badge-impact"><i class="bi bi-check-circle-fill"></i> ~90% Test Coverage</span>
+                                <span class="badge-impact"><i class="bi bi-shield-check"></i> 20+ REST Endpoints</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h3 class="project-title mb-0">Carbon-Aware Routing</h3>
+                                    <a href="https://github.com/yenminh269/carbon-routing" target="_blank" class="project-link" aria-label="Github link for Carbon-Aware Routing">
+                                        <i class="bi bi-box-arrow-up-right fs-5"></i>
                                     </a>
-                                </li> 
-                                <li class="d-flex align-items-center me-3"> 
-                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg> 
-                                    <small>HTML, CSS, JavaScript</small> 
-                                </li> 
-                            </ul> 
-                        </div> 
-                    </div> 
+                                </div>
+                                <p class="project-subtitle mb-3">Emission & Speed Optimization</p>
+                                <ul class="project-bullets mb-4">
+                                    <li>Developed a routing platform using Spring Boot, React, and PostgreSQL, implementing Dijkstra's algorithm across network topologies.</li>
+                                    <li>Validated 20+ REST endpoints via Postman, testing JWT authentication, RBAC, and error-handling.</li>
+                                    <li>Built automated unit tests with JUnit/Mockito (~90% coverage) and set up Docker & Jenkins CI/CD pipelines.</li>
+                                </ul>
+                            </div>
+                            <div class="project-tags mt-auto pt-3 border-top">
+                                <span class="tech-tag">Spring Boot</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">JUnit</span>
+                                <span class="tech-tag">Jenkins</span>
+                                <span class="tech-tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
+
+                <!-- Theme Park System -->
                 <div class="col">
-                    <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');"> 
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1 hovered"> 
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Event Booking System</h3> 
-                            <ul class="d-flex list-unstyled mt-auto"> 
-                                <li class="me-auto"> 
-                                    <a href="https://github.com/yenminh269/event_bookings" target="_blank">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
-                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
-                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
-                                        </svg>
+                    <div class="card project-card h-100 shadow-sm rounded-4 overflow-hidden">
+                        <div class="project-img-wrapper" style="background-image: url('./images/themepark_system.png');">
+                            <div class="project-metrics-overlay">
+                                <span class="badge-impact"><i class="bi bi-shield-lock-fill"></i> 100% RBAC Path Sec</span>
+                                <span class="badge-impact"><i class="bi bi-speedometer2"></i> 25% Faster Response</span>
+                            </div>
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column justify-content-between">
+                            <div>
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h3 class="project-title mb-0">Theme Park System</h3>
+                                    <a href="https://velocityvalley-themepark.vercel.app/" target="_blank" class="project-link" aria-label="Github link for Theme Park System">
+                                        <i class="bi bi-box-arrow-up-right fs-5"></i>
                                     </a>
-                                </li> 
-                                <li class="d-flex align-items-center me-3"> 
-                                    <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location"><use xlink:href="#geo-fill"></use></svg> 
-                                    <small>Java</small> 
-                                </li> 
-                               
-                            </ul> 
-                        </div> 
-                    </div> 
+                                </div>
+                                <p class="project-subtitle mb-3">Operational Management System</p>
+                                <ul class="project-bullets mb-4">
+                                    <li>Architected ticketing, maintenance tracking, and scheduling handling 1,000+ records across 10+ tables using Node.js & MySQL.</li>
+                                    <li>Implemented secure JWT authentication and Role-Based Access Control, reducing unauthorized access paths by 100%.</li>
+                                    <li>Optimized API routing to achieve 25% faster response times and integrated triggers to cut manual corrections by 40%.</li>
+                                </ul>
+                            </div>
+                            <div class="project-tags mt-auto pt-3 border-top">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Node.js</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JWT</span>
+                                <span class="tech-tag">Vercel & Render</span>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
             </div> 
-            <h2 class="border-top pt-5 pb-4">Technical Skills</h2>
-            <ul class="list-unstyled skills">
-                <li><strong>Languages:</strong> C++, HTML/CSS, Java, JavaScript, Python, R </li><br>
-                <li><strong>Developer Tools:</strong> Git, Bootstrap, Visual Studio Code, Eclipse</li>
-            </ul>
         </div>
     </section>
 
-    <section class="about pb-5">
-        <h2 class="pt-5 text-center">About Me</h2>
+    <!-- Currently Learning Section -->
+    <section class="currently-learning py-5">
+        <div class="container px-4">
+            <h2 class="text-center mb-5 section-title d-block mx-auto">Currently Learning & Focus Areas</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="learning-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="learning-icon-wrapper mb-3">
+                            <i class="bi bi-check2-square"></i>
+                        </div>
+                        <h4>QA Automation</h4>
+                        <p>Deepening expertise in end-to-end UI and API testing with <strong>Selenium</strong> and <strong>Playwright</strong>, focusing on element locator strategies and automated reporting.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="learning-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="learning-icon-wrapper mb-3">
+                            <i class="bi bi-cloud-arrow-up-fill"></i>
+                        </div>
+                        <h4>DevOps & CI/CD</h4>
+                        <p>Mastering workflow automation using <strong>Jenkins</strong> and <strong>GitHub Actions</strong>, alongside containerization strategies using <strong>Docker</strong>.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="learning-card p-4 rounded-4 shadow-sm h-100">
+                        <div class="learning-icon-wrapper mb-3">
+                            <i class="bi bi-cpu-fill"></i>
+                        </div>
+                        <h4>Enterprise Java</h4>
+                        <p>Studying advanced <strong>Spring Boot</strong> design patterns, distributed architectures, and API caching strategies to build highly scalable backend microservices.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience & Internships Section -->
+    <section class="experience py-5">
+        <div class="container px-4">
+            <h2 class="text-center mb-5 section-title d-block mx-auto">Experience & Internships</h2>
+            
+            <!-- Tutoring Experience -->
+            <div class="experience-item card border-0 shadow-sm rounded-4 p-4 mb-4">
+                <div class="row align-items-start">
+                    <div class="col-md-8">
+                        <span class="badge-experience"><i class="bi bi-people-fill"></i> ConocoPhillips CS Learning Center</span>
+                        <h3 class="experience-title">Academic Tutor</h3>
+                        <p class="text-muted mb-0"><i class="bi bi-geo-alt"></i> University of Houston, Houston, TX</p>
+                    </div>
+                    <div class="col-md-4 text-md-end mt-2 mt-md-0">
+                        <span class="badge text-bg-secondary px-3 py-2">Jan. 2026 – Present</span>
+                    </div>
+                </div>
+                <ul class="experience-bullets mt-3 mb-0">
+                    <li>Tutored students in C++ and Python across multiple core COSC courses, reinforcing problem-solving, algorithmic thinking, and debugging skills through one-on-one and group sessions.</li>
+                    <li>Assisted with tooling and platform setup for upper-level COSC courses and contributed to workshops and student activities that improved engagement and academic confidence.</li>
+                </ul>
+            </div>
+            
+            <!-- Forage Internships Grid -->
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="experience-card card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <span class="badge-experience-secondary"><i class="bi bi-briefcase"></i> Walmart Virtual Intern — Forage</span>
+                        <h4 class="experience-title">Advanced Software Engineering</h4>
+                        <p class="text-muted small"><i class="bi bi-calendar-check"></i> Dec. 2025 – Jan. 2026</p>
+                        <ul class="experience-bullets mb-0">
+                            <li>Applied data preprocessing techniques using Python to validate and structure input data for 200+ records prior to database modeling and software architecture design.</li>
+                            <li>Developed a custom heap data structure in Java to optimize priority-based shipping workflows, handling 100+ shipments.</li>
+                            <li>Designed UML Class and Entity Relationship Diagrams (ERDs) for data processors and database systems.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="experience-card card border-0 shadow-sm rounded-4 p-4 h-100">
+                        <span class="badge-experience-secondary"><i class="bi bi-briefcase"></i> Wells Fargo Virtual Intern — Forage</span>
+                        <h4 class="experience-title">Software Engineering</h4>
+                        <p class="text-muted small"><i class="bi bi-calendar-check"></i> Dec. 2025 – Jan. 2026</p>
+                        <ul class="experience-bullets mb-0">
+                            <li>Analyzed requirements for a portfolio management system and designed a normalized ERD modeling clients, portfolios, securities, and transactions with 20+ attributes.</li>
+                            <li>Implemented the relational schema using SQL DDL scripts, structuring the system for maintainable backend integration in Java.</li>
+                            <li>Ensured referential integrity, scalable asset allocation tracking, and minimized data redundancy.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="body py-5">
+        <div class="container px-4">
+            <h2 class="text-center mb-5 section-title d-block mx-auto">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="row g-4">
+                    <!-- Languages -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skills-category p-4 h-100">
+                            <h5 class="skills-category-title"><i class="bi bi-code-slash"></i> Languages</h5>
+                            <div class="skills-list">
+                                <span class="skill-pill">Java</span>
+                                <span class="skill-pill">Python</span>
+                                <span class="skill-pill">C++</span>
+                                <span class="skill-pill">TypeScript</span>
+                                <span class="skill-pill">JavaScript</span>
+                                <span class="skill-pill">SQL</span>
+                                <span class="skill-pill">HTML & CSS</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Databases -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skills-category p-4 h-100">
+                            <h5 class="skills-category-title"><i class="bi bi-database"></i> Databases</h5>
+                            <div class="skills-list">
+                                <span class="skill-pill">PostgreSQL</span>
+                                <span class="skill-pill">MySQL</span>
+                                <span class="skill-pill">SQLite</span>
+                                <span class="skill-pill">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Frameworks -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skills-category p-4 h-100">
+                            <h5 class="skills-category-title"><i class="bi bi-box"></i> Frameworks</h5>
+                            <div class="skills-list">
+                                <span class="skill-pill">Spring Boot</span>
+                                <span class="skill-pill">React</span>
+                                <span class="skill-pill">FastAPI</span>
+                                <span class="skill-pill">Node.js</span>
+                                <span class="skill-pill">Express.js</span>
+                                <span class="skill-pill">RESTful APIs</span>
+                                <span class="skill-pill">Nest.js</span>
+                                <span class="skill-pill">JUnit</span>
+                                <span class="skill-pill">Mockito</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Tools -->
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skills-category p-4 h-100">
+                            <h5 class="skills-category-title"><i class="bi bi-gear-fill"></i> Tools</h5>
+                            <div class="skills-list">
+                                <span class="skill-pill">Git & GitHub</span>
+                                <span class="skill-pill">VS Code</span>
+                                <span class="skill-pill">IntelliJ</span>
+                                <span class="skill-pill">Jenkins</span>
+                                <span class="skill-pill">Docker</span>
+                                <span class="skill-pill">Postman</span>
+                                <span class="skill-pill">Azure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Persona Section -->
+    <section class="about py-5">
+        <h2 class="text-center mb-5 section-title d-block mx-auto">About Me</h2>
         <div class="d-flex flex-column flex-md-row p-4 gap-4 align-items-center justify-content-center"> 
-            <div class="list-group"> 
-                <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"> 
+            <div class="list-group shadow-sm rounded-4 overflow-hidden bg-white" style="max-width: 600px;"> 
+                <div class="list-group-item d-flex gap-3 py-3" aria-current="true"> 
                     <img src="./images/paw-2-svgrepo-com.svg" alt="a paw" width="32" height="32" class="rounded-circle flex-shrink-0"> 
                     <div class="d-flex gap-2 w-100 justify-content-between"> 
                         <div> 
-                            <h6 class="mb-0">Animal</h6> 
-                            <p class="mb-0 opacity-75">I love dogs and enjoy spending time with them.</p> 
+                            <h6 class="mb-0 fw-bold">Animal Love</h6> 
+                            <p class="mb-0 opacity-75 small">I love dogs and enjoy spending time with them.</p> 
                         </div> 
                     </div> 
                 </div> 
-                <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"> 
+                <div class="list-group-item d-flex gap-3 py-3" aria-current="true"> 
                     <img src="./images/green-growth-leaf-nature-plant-4-svgrepo-com.svg" alt="leaf" width="32" height="32" class="rounded-circle flex-shrink-0"> 
                     <div class="d-flex gap-2 w-100 justify-content-between"> 
                         <div> 
-                            <h6 class="mb-0">Environment</h6> 
-                            <p class="mb-0 opacity-75">I'm passionate about sustainability — I care about recycling, reducing plastic use, and planting trees to help the planet.</p> 
+                            <h6 class="mb-0 fw-bold">Sustainability</h6> 
+                            <p class="mb-0 opacity-75 small">I'm passionate about sustainability — I care about recycling, reducing plastic use, and planting trees to help the planet.</p> 
                         </div> 
                     </div> 
                 </div>
-                <div class="list-group-item list-group-item-action d-flex gap-3 py-3" aria-current="true"> 
+                <div class="list-group-item d-flex gap-3 py-3" aria-current="true"> 
                     <img src="./images/music-note-4-svgrepo-com.svg" alt="music note" width="32" height="32" class="rounded-circle flex-shrink-0"> 
                     <div class="d-flex gap-2 w-100 justify-content-between"> 
                         <div> 
-                            <h6 class="mb-0">Hobbies</h6> 
-                            <p class="mb-0 opacity-75">Reading, jogging, and listening to music help me relax and recharge.</p> 
+                            <h6 class="mb-0 fw-bold">Recharge Hobbies</h6> 
+                            <p class="mb-0 opacity-75 small">Going to the gym, Reading, jogging, and listening to music help me relax and recharge.</p> 
                         </div> 
                     </div> 
                 </div>  
@@ -156,6 +383,7 @@
         </div>
     </section>
 
+    <!-- Footer Section -->
     <footer class="py-5"> 
         <ul class="nav justify-content-center border-bottom pb-3 mb-3"> 
             <li class="nav-item">
@@ -173,10 +401,10 @@
                 </a>
             </li>
         </ul> 
-        <p class="text-center text-body-secondary">© Minh Ho. All rights reserved</p>         
+        <p class="text-center text-body-secondary">© 2026 Minh Ho. All rights reserved</p>         
     </footer> 
         
-    
+    <!-- Bootstrap Bundle JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 </body>
 </html>
